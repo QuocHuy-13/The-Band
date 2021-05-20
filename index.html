@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Header -->
+        <div id="header">
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#band">BAND</a></li>
+                <li><a href="#tour">TOUR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li>
+                    <a href="#">
+                        MORE
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="search-btn">
+                <i class="search-icon fa fa-search"></i>
+            </div>
+        </div>
+        <!-- Image Slider -->
+        <div class="myslider">
+            <img src="./img/la.jpg" alt="la">
+            <div class="text-content">
+                <h2 class="text-heading">Los Angeles</h2>
+                <div class="description">We had the best time playing at Venice Beach!</div>
+            </div>
+        </div>
+        <div class="myslider">
+            <img src="./img/chicago.jpg" alt="chicago">
+            <div class="text-content">
+                <h2 class="text-heading">Chicago</h2>
+                <div class="description">Thank you, Chicago - A night we won't forget.</div>
+            </div>
+        </div>
+        <div class="myslider">
+            <img src="./img/ny.jpg" alt="ny">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="description">The atmosphere in New York is lorem ipsum.</div>
+            </div>
+        </div>
+        <!-- Content -->
+        <div id="content">
+            <div class="content-section" id="band">
+                <h2 class="section-heading">THE BAND</h2>
+                <p class="section-sub-heading">We love music</p>
+                <p class="about-description">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                <div class="row member-lists">
+                    <div class="col col-3 member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./img/bandmember.jpg" alt="member">
+                    </div>
+                    <div class="col col-3 member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./img/bandmember.jpg" alt="member">
+                    </div>
+                    <div class="col col-3 member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./img/bandmember.jpg" alt="member">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tour-section" id="tour">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">TOUR DATES</h2>
+                    <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+                    <ul class="ticket-lists">
+                        <li>September<span class="sold-out">Sold out</span></li>
+                        <li>October<span class="sold-out">Sold out</span></li>
+                        <li>November<span class="ticket-status">3</span></li>
+                    </ul>
+                    <div class="row places-lists">
+                        <div class="col col-3">
+                            <img src="./img/newyork.jpg" alt="newyork" class="places-img">
+                            <div class="places-body">
+                                <h3 class="places-heading">New York</h3>
+                                <p class="places-time">Fri 27 Nov 2016</p>
+                                <p class="places-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="btn-buy" onclick="buyticket()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <img src="./img/paris.jpg" alt="newyork" class="places-img">
+                            <div class="places-body">
+                                <h3 class="places-heading">Paris</h3>
+                                <p class="places-time">Sat 28 Nov 2016</p>
+                                <p class="places-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="btn-buy" onclick="buyticket()">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="col col-3">
+                            <img src="./img/newyork.jpg" alt="newyork" class="places-img">
+                            <div class="places-body">
+                                <h3 class="places-heading">San Francisco</h3>
+                                <p class="places-time">Sun 29 Nov 2016</p>
+                                <p class="places-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="btn-buy" onclick="buyticket()">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal" class="ticket-section">
+                <div class="modal-content">
+                    <div class="ticket-heading">
+                        <h2 class="heading"><i class="fa fa-suitcase"></i>Tickets</h2>
+                    </div>
+                    <div class="ticket-container">
+                        <form>
+                            <p class="form-label"><label for=""><i class="fa fa-shopping-cart"></i> Tickets, $15 per
+                                    person</label><br></p>
+                            <input type="text" placeholder="How many?" class="form-input"><br>
+                            <p class="form-label"><label for="" class="form-label"><i class="fa fa-user"></i> Send
+                                    To</label><br></p>
+                            <input type="text" placeholder="Enter Email" class="form-input"><br>
+                            <button class="form-btn">Pay<i class="fa fa-check"></i></button>
+                        </form>
+                        <div class="btn-close-help">
+                            <button class="btn-close" onclick="btnclose()">Close</button>
+                            <p class="help">Need <a href="">help?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="contact">
+                <h2 class="section-heading">CONTACT</h2>
+                <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row content-contact">
+                    <div class="col col-2 contact-info">
+                        <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                        <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                        <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-2 contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-2">
+                                    <input type="text" name="" id="" required placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col col-2 ">
+                                    <input type="email" name="" id="" required placeholder="Email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" id="" required placeholder="Message"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <button class="btn-submit mt-16" type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Map -->
+        <div class="map-section">
+            <img src="./img/map.jpg" alt="map">
+        </div>
+        <!-- Footer -->
+        <div id="footer">
+            <div class="socials-lists">
+                <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
+        </div>
+        <!-- To the top -->
+        <button onclick="topFunction()" id="btn-tothetop" title="Go to top"><i class="fa fa-caret-up"></i>Top<a href="#main"></a></button>
+    </div>
+    <!-- JAVASCRIP -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
